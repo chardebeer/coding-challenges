@@ -33,3 +33,31 @@ function doTheMath(secondInt, secondDec, secondStr){
 
 doTheMath(99, 4.4, ' Chaos')
 
+// Conditional Statements
+
+function gradeScore(score){
+    if( 25 < score){
+        return "A";
+    }
+    else if (20 < score ){
+        return "B";
+    }
+    else if (15 < score ){
+        return "C";
+    }
+    else if (10 < score ){
+        return "D";
+    }
+    else if( 5 < score ){
+        return "E";
+    }
+    else {
+        return "F";
+    }
+}
+
+document.getElementById("pass").innerHTML = gradeScore(26) ;
+document.getElementById("avg").innerHTML = gradeScore(17) ;
+document.getElementById("fail").innerHTML = gradeScore(2) ;
+
+

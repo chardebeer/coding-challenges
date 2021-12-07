@@ -60,4 +60,31 @@ document.getElementById("pass").innerHTML = gradeScore(26) ;
 document.getElementById("avg").innerHTML = gradeScore(17) ;
 document.getElementById("fail").innerHTML = gradeScore(2) ;
 
+//Loops
 
+
+function vowelsAndConsonants(str){
+
+    const vowels = ["a", "e", "i", "o", "u"];
+    const string = str.split("");
+    let vowelArr = [];
+    let constArr = [];
+
+    for (let i = 0; i < string.length; i++){
+
+        //This is a ternary operator
+        vowels.includes(string[i]) ? vowelArr.push(string[i]) : constArr.push(string[i]);
+
+    }
+
+    for (let i = 0; i < vowelArr.length; i++){
+        console.log(vowelArr[i])
+    }
+
+    for (let i = 0; i < constArr.length; i++){
+console.log(constArr[i]);
+    }
+
+}
+
+vowelsAndConsonants("Hey tomorrow, fuck you, and all your friends yesterday")

@@ -5,6 +5,9 @@ function greeter(name){
     console.log("Hey,  " + name + " ✨");
 
     document.getElementById("greeting").innerHTML = "Hey, " + name + " ✨";
+    const sum = 10 / (2 + 2) + 4 * 8;
+
+console.log("SUM = " + sum);
 }
 
 greeter("Charlize")
